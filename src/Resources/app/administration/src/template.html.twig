@@ -1,0 +1,12 @@
+{% block sw_customer_card_metadata_additional %}
+{% parent %}
+<sw-number-field
+    v-if="editMode"
+    v-model="dneHeight"
+    :label="$tc('sw-product.settingsForm.labelHeight')"
+>
+    <template #suffix>
+        <span>cm</span>
+    </template>
+</sw-number-field>
+{% endblock %}
